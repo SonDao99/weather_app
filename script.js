@@ -5,12 +5,10 @@ const weatherApp = (() => {
     unitsButton.addEventListener('click', () => {
         if (unitsButton.textContent === '°C') {
             unitsButton.textContent = '°F';
-            currentUnits = 'imperial'
-            console.log(currentUnits);
+            currentUnits = 'imperial';
         } else {
             unitsButton.textContent = '°C';
             currentUnits = 'metric';
-            console.log(currentUnits);
         }
     })
 
@@ -136,7 +134,7 @@ const weatherApp = (() => {
                     <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-12" />
                 </svg>`;
         } else if (data.mainDescription.toLowerCase() === 'clear') {
-            if (data.currentTime < data.sunrise || data.currentTime < data.sunset) {
+            if (data.currentTime < data.sunrise || data.currentTime > data.sunset) {
                 weatherIcon.innerHTML = 
                     `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="100" height="100" viewBox="0 0 24 24" stroke-width="0.5" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

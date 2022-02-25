@@ -97,3 +97,7 @@ button {
     font-size: 80px;
     color: goldenrod;
 }
+
+#location {
+    text-align: center;
+}
