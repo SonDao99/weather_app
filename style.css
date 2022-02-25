@@ -1,0 +1,99 @@
+@font-face {
+    font-family: libreFranklin;
+    src: url(LibreFranklinThin-G79a.ttf);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: libreFranklin;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #025B6D;
+}
+
+#appContainer {
+    box-shadow: 0 2px 30px -15px;
+}
+
+#searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 600px;
+    background-color: #C2D0DD;
+    border-radius: 10px 10px 0 0;
+}
+
+input {
+    border-radius: 0;
+    padding: 10px;
+    width: 300px;
+    height: 20px;
+    border-style: none;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    /*box-sizing: border-box;*/
+    border-radius: 0;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-style: none;
+    /*border-style: solid;
+    border-width: 1px;
+    border-color: rgb(179, 176, 176);*/
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+#units {
+    border-radius: 5px 0 0 5px;
+}
+
+#search {
+    border-radius: 0 5px 5px 0;
+}
+
+#weatherContainer {
+    width: 600px;
+    height: 400px;
+    padding: 15px;
+    background-color: #F7F7F7;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+}
+
+#leftDiv, #rightDiv {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#rightDiv {
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+#temperature {
+    font-size: 80px;
+    color: goldenrod;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="appContainer">
+        <div id="searchContainer">
+            <button id="units">°C</button>
+            <input type="text" placeholder="Search City">
+            <button id="search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+                </svg>
+            </button>
+        </div>
+        <div id="weatherContainer">
+            <div id="leftDiv">
+                <div id="location"></div>
+                <div id="temperature"></div>
+                <div id="description"></div>
+                <div id="weatherIcon">
+                    
+                </div>
+            </div>
+            <div id="rightDiv">
+                <div id="feelsLike"></div>
+                <div id="min"></div>
+                <div id="max"></div>
+                <div id="humidity"></div>
+                <div id="wind"></div>
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+</html>
